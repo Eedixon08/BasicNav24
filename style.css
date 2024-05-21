@@ -1,0 +1,70 @@
+/* Change the Background color */
+body {
+    background-color: rgb(212, 158, 167);
+}
+
+/* This will style the nav links to look like buttons */
+.navButtonWrapper {
+    background-color: rgb(237, 121, 140);
+    width: 100px;
+    padding: 11px 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/* Use hover on the div to change background color */
+.navButtonWrapper:hover {
+    background-color: rgb(154, 66, 66);
+    transition-duration: 500ms;
+    /* border: 2px solid rgb(138, 7, 51); */
+}
+
+/* This will remove the hyperlink "look" of the <a> element */
+.navButtonWrapper a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.dropdownBox {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    /* The follwoing lines will center the dropdown under the product button */
+    margin-top: 10px;
+    margin-left: -25px;
+    box-shadow: 5px 5px 10px rgb(43, 20, 43);
+}
+
+/* This will override the previous class during a hover event to display the dropdown. This has to come after the display: none property */
+.navButtonWrapper:hover .dropdownBox {
+    display: block;
+    color: aquamarine;
+    background-color: rgb(15, 39, 105);
+}
+
+/* Change the background color to a different difault of the dropbox items */
+
+.dropdownBox a:hover {
+    display: inline block;
+    color: rgb(239, 136, 152);
+    transition-duration: 500ms;
+    font-size: 20px;
+    width: 100%;
+    padding: 11px 20px;
+}
+
+.redBG {
+    background-color: cadetblue;
+}
+
+
+
+
+/* Change the font properties for only the anchor elements in the dropdown */
+
+
+/* When hovered over, change any properties of only the dropdown a elements  */
